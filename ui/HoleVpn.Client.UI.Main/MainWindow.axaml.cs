@@ -1,7 +1,6 @@
 using Avalonia.Controls;
 using Avalonia.Interactivity;
 using HoleVpn.Client.UI.Domain.Interfaces;
-using System.Diagnostics;
 using System.Threading;
 
 namespace HoleVpn.Client.UI.Main;
