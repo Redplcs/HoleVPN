@@ -1,6 +1,8 @@
 using Avalonia;
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Markup.Xaml;
+using HoleVpn.Client.UI.Domain.Implementation;
+using HoleVpn.Client.UI.Domain.Interfaces;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 
@@ -19,12 +21,14 @@ public partial class App : Application
 
     private ServiceProvider CreateServiceProvider()
     {
-        var collection = new ServiceCollection();
+        var services = new ServiceCollection();
 
-        collection.AddSingleton(this);
-        collection.AddSingleton<MainWindow>();
+        services.AddSingleton<IConnectionProvider, DummyConnectionProvider>();
 
-        return collection.BuildServiceProvider();
+        services.AddSingleton(this);
+        services.AddSingleton<MainWindow>();
+
+        return services.BuildServiceProvider();
     }
 
     public override void Initialize()
