@@ -2,7 +2,8 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        xmlns:local="clr-namespace:HoleVpn.Client.UI.Main;assembly=HoleVpn.Client.UI.Main"
+		mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="HoleVpn.Client.UI.Main.MainWindow">
 	<Grid ShowGridLines="True">
 		<Grid.ColumnDefinitions>
@@ -10,10 +11,12 @@
 			<ColumnDefinition/>
 		</Grid.ColumnDefinitions>
 
-		<ListBox Name="Servers" Grid.Column="0">
-			<ListBoxItem Content="Server #1"/>
-			<ListBoxItem Content="Server #2"/>
-			<ListBoxItem Content="Server #3"/>
+		<ListBox Grid.Column="0"
+				 ItemsSource="{Binding "
+				 Name="Servers">
+			<ListBoxItem Content="Placeholder #1"/>
+			<ListBoxItem Content="Placeholder #2"/>
+			<ListBoxItem Content="Placeholder #3"/>
 		</ListBox>
 
 		<StackPanel Grid.Column="1"
