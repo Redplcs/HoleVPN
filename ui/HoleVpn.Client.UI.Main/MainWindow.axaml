@@ -7,6 +7,6 @@
         Title="HoleVPN">
 	<StackPanel HorizontalAlignment="Center"
 				VerticalAlignment="Center">
-		<Button Content="Connect"/>
+		<Button Content="Connect" Click="OnConnectButtonClicked"/>
 	</StackPanel>
 </Window>
