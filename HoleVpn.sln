@@ -7,6 +7,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ui", "ui", "{7BAB9503-2EA6-
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HoleVpn.Client.UI.Main", "ui\HoleVpn.Client.UI.Main\HoleVpn.Client.UI.Main.csproj", "{8079279F-DAFD-4CDC-A4E8-46017DF213F3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HoleVpn.Client.Interop", "ui\HoleVpn.Client.Interop\HoleVpn.Client.Interop.csproj", "{637230A8-B384-4E2E-8CF0-3C9D859FF820}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,8 +22,13 @@ Global
 		{8079279F-DAFD-4CDC-A4E8-46017DF213F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8079279F-DAFD-4CDC-A4E8-46017DF213F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8079279F-DAFD-4CDC-A4E8-46017DF213F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{637230A8-B384-4E2E-8CF0-3C9D859FF820}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{637230A8-B384-4E2E-8CF0-3C9D859FF820}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{637230A8-B384-4E2E-8CF0-3C9D859FF820}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{637230A8-B384-4E2E-8CF0-3C9D859FF820}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{8079279F-DAFD-4CDC-A4E8-46017DF213F3} = {7BAB9503-2EA6-4632-A25C-5D58D878380E}
+		{637230A8-B384-4E2E-8CF0-3C9D859FF820} = {7BAB9503-2EA6-4632-A25C-5D58D878380E}
 	EndGlobalSection
 EndGlobal
